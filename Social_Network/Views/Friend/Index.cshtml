@@ -1,0 +1,83 @@
+﻿@using Social_Network.Core.Application.ViewModels.Friend; 
+@using Social_Network.Core.Application.ViewModels.Publication; 
+@model List<FriendViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row justify-content-center">
+    <h1 class="text-center">Amigos</h1>
+    <div class="row justify-content-end my-3">
+        <div class="col-md-4">
+            <a asp-controller="Friend" asp-action="AddFriend" class="btn w-100 btn-success">Agregar amigo</a>
+        </div>
+    </div>
+
+    <div class="col-md-8 mt-6">
+        @if (ViewBag.PostsFriends.Count == 0 || ViewBag.PostsFriends.Count == null)
+        {
+        <div class="my-3">
+            <h3 class="text-center">Tus amigos no tienen publicaciones</h3>
+        </div>
+        }
+        else
+        {
+            <div class="col-md-8">
+                <h3 class="text-center">Publicaciones de tus amigos</h3>
+            </div>
+            @foreach (PublicationViewModel item in ViewBag.PostsFriends)
+            {
+                <div class="card d-flex @*flex-md-row*@ mb-4 box-shadow h-md-250">
+                    <div class="card-title d-flex justify-content-between m-3">
+                        <div class="d-flex gap-2 align-items-start">
+                            <img src="@item.PhotoUserUrl" alt="..." class="rounded-circle" style="width: 40px; height: 40px;">
+                            <strong class="d-inline-block mb-2 text-dark h5">@item.UserName</strong>
+                        </div>
+                    </div>
+                    <!--Descripcion del Post-->
+                    <div class="card-body p-3 d-flex justify-content-center align-items-center">
+
+                        <div>
+                            <!--Imagen del Post-->
+                            <img class="card-img-right flex-auto d-none d-md-block" src="@item.PhotoPublicationUrl" style="width: 564px; height: 434px;" data-holder-rendered="true">
+                        </div>
+                    </div>
+                    <div class="row mx-5">
+                        <div class="d-flex gap-2 align-items-start">
+                            <img src="@item.PhotoUserUrl" alt="..." class="rounded-circle" style="width: 40px; height: 40px;">
+                            <strong class="text-dark h5"><strong>@item.UserName</strong></strong>
+                            <p class="card-text text-wrap mb-auto">@item.PublicationContent</p>
+                        </div>
+                        <div class="my-3 d-flex align-items-center justify-content-between">
+                            <p class="text-muted">@item.Created</p>
+                            <a asp-controller="Comment" asp-action="Index" asp-route-id="@item.Id" class="btn btn-secondary">Ver comentarios</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="col-md-4 mt-6">
+        @if (Model.Count == 0)
+        {
+            <h2 class="text-center fw-bold">No Tienes Amigos</h2>
+        }
+        else
+        {
+            <h3 class="text-center">Listado de amigos</h3>
+            @foreach (FriendViewModel item in Model)
+            {
+                <div class="card d-flex @*flex-md-row*@ mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center mx-2">
+                        <p class="card-text"><strong>Nombre: </strong>@item.FriendFirstName</p>
+                        <p class="card-text"><strong>Apellido: </strong>@item.FriendLastName</p>
+                        <p class="card-text"><strong>Nombre de usuario: </strong>@item.FriendUserName</p>
+                    </div>
+                    <div class="d-flex my-2 w-100 align-items-center">
+                        <a asp-controller="Friend" asp-action="DeleteFriend" asp-route-id="@item.Id" class="btn btn-outline-danger w-100 mx-2">Eliminar</a>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

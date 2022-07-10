@@ -1,0 +1,15 @@
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\bin\Debug\net5.0\Social_Network.Core.Application.deps.json
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\bin\Debug\net5.0\Social_Network.Core.Application.dll
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\bin\Debug\net5.0\ref\Social_Network.Core.Application.dll
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\bin\Debug\net5.0\Social_Network.Core.Application.pdb
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\bin\Debug\net5.0\Social_Network.Core.Domain.dll
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\bin\Debug\net5.0\Social_Network.Core.Domain.pdb
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\obj\Debug\net5.0\Social_Network.Core.Application.csprojAssemblyReference.cache
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\obj\Debug\net5.0\Social_Network.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\obj\Debug\net5.0\Social_Network.Core.Application.AssemblyInfoInputs.cache
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\obj\Debug\net5.0\Social_Network.Core.Application.AssemblyInfo.cs
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\obj\Debug\net5.0\Social_Network.Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\obj\Debug\net5.0\Social_Network.Core.Application.csproj.CopyComplete
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\obj\Debug\net5.0\Social_Network.Core.Application.dll
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\obj\Debug\net5.0\ref\Social_Network.Core.Application.dll
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Application\obj\Debug\net5.0\Social_Network.Core.Application.pdb

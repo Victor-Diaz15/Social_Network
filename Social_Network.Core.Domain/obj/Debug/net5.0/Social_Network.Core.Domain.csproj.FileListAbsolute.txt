@@ -1,0 +1,12 @@
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\bin\Debug\net5.0\Social_Network.Core.Domain.deps.json
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\bin\Debug\net5.0\Social_Network.Core.Domain.dll
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\bin\Debug\net5.0\ref\Social_Network.Core.Domain.dll
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\bin\Debug\net5.0\Social_Network.Core.Domain.pdb
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\obj\Debug\net5.0\Social_Network.Core.Domain.csprojAssemblyReference.cache
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\obj\Debug\net5.0\Social_Network.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\obj\Debug\net5.0\Social_Network.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\obj\Debug\net5.0\Social_Network.Core.Domain.AssemblyInfo.cs
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\obj\Debug\net5.0\Social_Network.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\obj\Debug\net5.0\Social_Network.Core.Domain.dll
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\obj\Debug\net5.0\ref\Social_Network.Core.Domain.dll
+C:\Users\rubi\Desktop\Academico\5to_Cuatrimestre\Materias\Programacion3\Social_Network\Social_Network.Core.Domain\obj\Debug\net5.0\Social_Network.Core.Domain.pdb

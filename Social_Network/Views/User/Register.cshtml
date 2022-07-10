@@ -1,0 +1,79 @@
+﻿@model Social_Network.Core.Application.ViewModels.User.SaveUserViewModel
+@{
+    bool editMode = Model.Id == 0 ? false : true;
+    ViewData["Title"] = "Register";
+}
+
+<div class="row mt-5">
+    <div class="col-9 mx-auto">
+        <div class="card shadow-smv">
+            <div class="card-header bg-dark text-light">
+                <h4 class="text-center">Registro de Usuario</h4>
+            </div>
+            <div class="card-body">
+                <form class="d-flex flex-column align-items-center justify-content-center gap-3" enctype="multipart/form-data" method="post" asp-controller="User" asp-action="Register">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label asp-for="FirstName" class="form-label">Nombre: </label>
+                                <input type="text" asp-for="FirstName" class="form-control">
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="LastName" class="form-label">Apellido: </label>
+                                <input type="text" asp-for="LastName" class="form-control">
+                                <span asp-validation-for="LastName" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Email" class="form-label">Email: </label>
+                                <input asp-for="Email" class="form-control">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="PhoneNumber" class="form-label">Telefono: </label>
+                                <input type="text" asp-for="PhoneNumber" class="form-control">
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label asp-for="ProfilePicture" class="form-label">Selecciona una imagen de perfil: </label>
+                                @if (editMode)
+                                {
+                                    <input asp-for="ProfilePicture" class="form-control">
+                                }
+                                else
+                                {
+                                    <input required asp-for="ProfilePicture" class="form-control">
+                                }
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="UserName" class="form-label">Usuario: </label>
+                                <input type="text" asp-for="UserName" class="form-control">
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+                                @if (Model.UserExit)
+                                {
+                                    <span>@Html.ValidationSummary(false, "", new { @class = "text-danger" })</span>
+                                    Model.UserExit = false;
+                                }
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="Password" class="form-label">Contraseña: </label>
+                                <input type="password" asp-for="Password" class="form-control">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label asp-for="ConfirmPassword" class="form-label">Confimar Contraseña: </label>
+                                <input type="password" asp-for="ConfirmPassword" class="form-control">
+                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 my-3">
+                        <button type="submit" class="btn w-100 btn-outline-primary">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

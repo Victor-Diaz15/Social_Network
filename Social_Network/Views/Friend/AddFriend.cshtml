@@ -1,0 +1,29 @@
+﻿@using Social_Network.Core.Application.ViewModels.Friend;
+@model SaveFriendViewModel
+@{
+    ViewData["Title"] = "AddFriend";
+}
+
+
+<div class="row mt-5">
+    <div class="col-4 mx-auto">
+        <div class="card shadow-sm">
+            <div class="card-header bg-black text-light">
+                <h4 class="text-center">Agregar Amigo</h4>
+            </div>
+            <div class="card-body">
+                <form class="" method="post" asp-controller="Friend" asp-action="AddFriend">
+                    <div class="mb-3">
+                        <label asp-for="FriendUserName" class="form-label">Por favor indique el Usuario: </label>
+                        <input type="text" asp-for="FriendUserName" class="form-control">
+                    </div>
+                    @Html.ValidationSummary(false, "", new { @class = "text-danger text-center" })
+                    <div class="mt-4">
+                        <button type="submit" class="btn w-100 btn-outline-primary">Agregar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

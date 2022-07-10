@@ -1,0 +1,82 @@
+﻿@using Social_Network.Core.Application.ViewModels.Publication;
+@model SavePublicationViewModel
+@{
+    bool editMode = Model.Id == 0 ? false : true;
+    ViewData["Title"] = "Home";
+}
+
+
+<div class="container-fluid mb-4">
+    <form method="post" asp-controller="Home" asp-action="@(editMode ? "UpdatePost" : "AddPost")" enctype="multipart/form-data" class="">
+
+        <div class="input-group-prepend">
+            <h3 class="text-center">@(editMode ? $"Editando Publicacion: # { Model.Id}" : "Crear Publicacion")</h3>
+        </div>
+        <div class=" mb-3">
+            <label asp-for="@Model.PhotoPublicationFile" class="custom-file-label">Seleccione una imagen :</label> <br />
+            <input asp-for="@Model.PhotoPublicationFile" class="custom-file-input" />
+        </div>
+        <div class="form-group shadow-textarea">
+            <label asp-for="@Model.PublicationContent">Agrega un caption:</label>
+            <textarea asp-for="@Model.PublicationContent" class="form-control z-depth-1" rows="3" placeholder=""></textarea>
+            @Html.ValidationSummary(true, "", new { @class = "text-danger text-center" })
+        </div>
+
+        <input type="hidden" asp-for="@Model.Created" name="Created" />
+        <input type="hidden" asp-for="@Model.Id" name="Id" />
+
+        <div class="w-100 my-3">
+            <button type="submit" class="btn btn-primary w-100 mt-2">Publicar</button>
+        </div>
+    </form>
+
+    <div class="row justify-content-center">
+        @if (ViewBag.Posts.Count == 0)
+        {
+            <h2 class="text-center fw-bold">No hay Publicaciones</h2>
+        }
+        else
+        {
+            @foreach (PublicationViewModel item in ViewBag.Posts)
+            {
+                <div class="col-md-8 mt-6">
+                    <div class="card d-flex @*flex-md-row*@ mb-4 box-shadow h-md-250">
+                        <div class="card-title d-flex justify-content-between m-3">
+                            <div class="d-flex gap-2 align-items-start">
+                                <img src="@item.PhotoUserUrl" alt="..." class="rounded-circle" style="width: 40px; height: 40px;">
+                                <strong class="d-inline-block mb-2 text-primary h5">@item.UserName</strong>
+                            </div>
+                            <div class="d-flex align-items-end">
+                                <!--Boton Opciones-->
+                                <div class="btn-group dropstart">
+                                    <button type="button" class="btn btn-secondary text-center dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <strong>...</strong>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a asp-controller="Home" asp-action="UpdatePost" asp-route-id="@item.Id" class="dropdown-item">Editar</a></li>
+                                        <li><a asp-controller="Home" asp-action="DeletePost" asp-route-id="@item.Id" class="dropdown-item">Borrar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Descripcion del Post-->
+                        <div class="card-body p-3 d-flex justify-content-center align-items-center">
+
+                            <div>
+                                <!--Imagen del Post-->
+                                <img class="card-img-right flex-auto d-none d-md-block" src="@item.PhotoPublicationUrl" style="width: 564px; height: 434px;" data-holder-rendered="true">
+                            </div>
+                        </div>
+                        <div class="row mx-5">
+                            <p class="card-text mb-auto mt-2"><strong>@item.PublicationContent</strong></p>
+                            <div class="my-3 d-flex align-items-center justify-content-between">
+                                <p class="text-muted">@item.Created</p>
+                                <a asp-controller="Comment" asp-action="Index" asp-route-id="@item.Id" class="btn btn-secondary mt-3">Ver comentarios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

@@ -1,0 +1,24 @@
+﻿@model Social_Network.Core.Application.ViewModels.Publication.SavePublicationViewModel
+@{
+    ViewData["Title"] = "Delete Post";
+}
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-center">
+        <div class="col-6">
+            <div class="card my-5">
+                <div class="card-header bg-danger text-light">
+                    <h3>Esta seguro que desea eliminar esta Publicacion:</h3>
+                </div>
+                <div class="card-body text-center">
+                    <form method="post" asp-controller="Home" asp-action="DeletePost">
+                        <input type="hidden" asp-for="Id" />
+
+                        <button type="submit" class="btn btn-outline-danger me-3">Eliminar</button>
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary text-dark">Cancelar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

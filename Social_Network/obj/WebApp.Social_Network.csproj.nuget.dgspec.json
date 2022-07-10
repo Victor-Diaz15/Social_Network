@@ -1,0 +1,387 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network\\WebApp.Social_Network.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Application\\Social_Network.Core.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Application\\Social_Network.Core.Application.csproj",
+        "projectName": "Social_Network.Core.Application",
+        "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Application\\Social_Network.Core.Application.csproj",
+        "packagesPath": "C:\\Users\\rubi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rubi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Domain\\Social_Network.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Domain\\Social_Network.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Domain\\Social_Network.Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Domain\\Social_Network.Core.Domain.csproj",
+        "projectName": "Social_Network.Core.Domain",
+        "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Domain\\Social_Network.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\rubi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rubi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Persistence\\Social_Network.Infrastructure.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Persistence\\Social_Network.Infrastructure.Persistence.csproj",
+        "projectName": "Social_Network.Infrastructure.Persistence",
+        "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Persistence\\Social_Network.Infrastructure.Persistence.csproj",
+        "packagesPath": "C:\\Users\\rubi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rubi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Application\\Social_Network.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Application\\Social_Network.Core.Application.csproj"
+              },
+              "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Domain\\Social_Network.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Domain\\Social_Network.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Shared\\Social_Network.Infrastructure.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Shared\\Social_Network.Infrastructure.Shared.csproj",
+        "projectName": "Social_Network.Infrastructure.Shared",
+        "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Shared\\Social_Network.Infrastructure.Shared.csproj",
+        "packagesPath": "C:\\Users\\rubi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rubi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Application\\Social_Network.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Application\\Social_Network.Core.Application.csproj"
+              },
+              "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Domain\\Social_Network.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Domain\\Social_Network.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network\\WebApp.Social_Network.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network\\WebApp.Social_Network.csproj",
+        "projectName": "WebApp.Social_Network",
+        "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network\\WebApp.Social_Network.csproj",
+        "packagesPath": "C:\\Users\\rubi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rubi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Application\\Social_Network.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Core.Application\\Social_Network.Core.Application.csproj"
+              },
+              "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Persistence\\Social_Network.Infrastructure.Persistence.csproj": {
+                "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Persistence\\Social_Network.Infrastructure.Persistence.csproj"
+              },
+              "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Shared\\Social_Network.Infrastructure.Shared.csproj": {
+                "projectPath": "C:\\Users\\rubi\\Desktop\\Academico\\5to_Cuatrimestre\\Materias\\Programacion3\\Social_Network\\Social_Network.Infrastructure.Shared\\Social_Network.Infrastructure.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
